@@ -1,0 +1,95 @@
+# This is my heading 1
+## This is my heading 2
+### This is my heading 3
+#### This is my heading 4
+
+
+
+# Writting Bullet point
+use symbol * for bullet points
+* Point 1
+* Point 2
+* Point 3
+
+
+
+### Numbering
+1. Number 1
+2. Number 2
+3. Number 3
+
+
+
+# Use link
+#### [Name](website URL)
+[Google](https://www.google.com/)
+
+
+
+# How to add Image
+#### ![Image name](Image URL)
+![Snap](https://goldenlotusconsultancy.com/assets/img/team/2.jpg)
+
+
+
+# How to add Line
+## --- (3 dash)
+---
+
+
+
+# How to add a Table
+###### |Student Name | Email Id| 
+###### |-------------|---------| (It means header)
+###### |Shubh        |abc@xyz.com| (It means data in table)
+###### |Swap         |swap@xyz.com| (It means 2nd record in table)
+
+|Student Name | Email Id| 
+|-------------|---------|
+|Shubh        |abc@xyz.com|
+|Swap         |swap@xyz.com| 
+
+
+
+# Shortcuts
+###### Shortcut to add cells: Press 'esc' key and then press 'a' key
+###### Shortcut to delete cells: Press 'd' key 2 times
+###### Shortcut to execute cells: Shift + Enter
+
+
+
+# This is my single line comment in code
+1+4
+
+
+
+# Multiline comment
+###### """ 
+###### This is my multiline 
+###### comment 
+###### """
+
+""" 
+This is multiline comment 1
+This is multiline comment 2 
+"""
+2*4
+
+
+
+# Print Statement
+###### print('Hello Shubh')
+print('Hello Shubh')
+
+
+
+## For Loop
+for i in range(10):
+    print(i)
+
+
+# ipynb is a extension of jupyter
+# ipynb fullform "Interactive Python Notebook"
+
+
+
