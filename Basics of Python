@@ -91,6 +91,7 @@ for i in range(10):
 # ipynb is a extension of jupyter
 # ipynb fullform "Interactive Python Notebook"
 
+####------------------------------------------------------------------------------------------------------
 
 a = 10 #Assign 10 value to variable a
 b = 22 #Assign value 22 to varibale b
@@ -103,7 +104,26 @@ type(Marital_Status) #Checking type of Marital_Status i.e. bool
 c = 20 #Comment
 type(a) #Checking type of a i.e. number
 
+####------------------------------------------------------------------------------------------------------
+
+name = 'Shubh'
+mob = 4354354552
+bal = 0.50 
+age = 30
 
 
+## using comma
+print('The name variable has value',name)
 
+
+## Using f string method
+print(f'The age variable has value {age}')
+
+
+## Using .format method
+print('The name variable has value {}'.format(name))
+print('The age variable has value {a}'.format(a=age))
+print('The bal variable has value {}'.format(bal))
+
+####------------------------------------------------------------------------------------------------------
 
