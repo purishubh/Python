@@ -1,0 +1,119 @@
+# Python Data Structures & Boolean
+* Boolean
+* Boolean & Logic 
+* Lists
+* Comparison 
+* Dictionaries
+* Tuples
+* Sets
+
+
+print(True,False)
+type(True) # bool
+type(False) # bool
+
+
+my_str = "Shubh Puri"
+print(my_str.isalnum()) #check if all char are numbers
+print(my_str.isalpha()) #check if all char in the string are alphabetical
+print(my_str.isdigit()) #test if string contain digits
+print(my_str.istitle()) #test if string contain is title words
+print(my_str.isupper()) #test if string contain upper case
+print(my_str.islower()) #test if string contain lower case
+print(my_str.isspace()) #test if string contain space
+print(my_str.endswith('i')) #test if string ends with 'i'
+print(my_str.startswith('S')) #test if string starts with 's'
+
+
+# Boolean and Logical operations
+
+True and True
+True and False
+True or True
+True or False
+
+
+
+str1 = "Hello World"
+str2 = "Shubh"
+print(str1)
+print(str2)
+str1.isdecimal() or str2.isalpha()
+
+#### Lists
+lst1 = [] # define list
+lst2 = list() # define list
+type(lst2) # list
+
+lst1 = ["Shubh", "Puri", 100, 200, 400]
+len(lst1) # 5
+
+####Append in list
+# Append is used to add element in list
+lst1 = ["Shubh", "Puri", 100, 200, 400]
+lst1.append("Hello") # ['Shubh', 'Puri', 100, 200, 400, 'Hello']
+
+
+lst1[1] # 'Puri'
+lst1[1:5] # ['Puri', 'World', 100, 200]
+
+
+# Nested list
+lst1.append(["Swap","Kumar") # ['Shubh', 'Puri', 'World', 100, 200, 400, 'Hello', ['Swap', 'Kumar']]
+
+
+#### Insert
+# Insert in specific order
+lst1.insert(2,"World") # ['Shubh', 'Puri', 'World', 100, 200, 400, 'Hello']
+
+
+####Extent Method
+# Extend method is not adding as nested element it will add into the arraay as elements this is difference between append and extend method
+str = [1,2,3,4,5,6,] 
+str.extend([7,8,9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+#### Various operation that we can perform in list
+
+# Sum
+lst = [1,2,3,4,5]
+sum(lst) # 15
+
+
+# pop method, remove last value as well as index value
+lst = [1,2,3,4,5,6,7,8,9]
+lst.pop() #remove last value from list
+lst.pop(2) #remove 2nd index value from list # [1, 2, 4, 5, 6, 7, 8]
+
+
+#### count() Calulate total occurance of given elements of list
+lst = [1,2,3,2,5,2,7]
+lst.count(2) # output is 3 coz '2' number occurence is 3 times in 'lst' list # 3
+
+
+#### index() Return the index of first occurence. Start and end index is not necessary parameters
+lst.index(1,0,4) # here first is value and second and third is index value, so it will search '1' is present in which index between 0 to 4 index # 0
+
+
+#### Min and Max
+# min
+min(lst)  # return the minimum value in the list # 1
+
+
+# max
+max(lst) # return the maximun value in the list # 9
+
+
+lst = [1,2,3,4,5]
+lst*2 # it will add list data again in the list like [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+
+
+
+
+
+
+
+
+
+
