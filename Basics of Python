@@ -92,4 +92,18 @@ for i in range(10):
 # ipynb fullform "Interactive Python Notebook"
 
 
+a = 10 #Assign 10 value to variable a
+b = 22 #Assign value 22 to varibale b
+Name = "Shubh" #Assign value 'Shubh' to variable Name
+DOB = "15/02/1997" #Assign value "15/02//1997" to variable DOB
+ph = 2344422352332 #assign numbers to variable ph
+PH = 879879789879 #Assign numbers to variable PH
+Marital_Status = True #Assign boolean value to Marital_Status varibale
+type(Marital_Status) #Checking type of Marital_Status i.e. bool
+c = 20 #Comment
+type(a) #Checking type of a i.e. number
+
+
+
+
 
