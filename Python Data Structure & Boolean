@@ -7,6 +7,7 @@
 * Tuples
 * Sets
 
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 print(True,False)
 type(True) # bool
@@ -24,6 +25,7 @@ print(my_str.isspace()) #test if string contain space
 print(my_str.endswith('i')) #test if string ends with 'i'
 print(my_str.startswith('S')) #test if string starts with 's'
 
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 # Boolean and Logical operations
 
@@ -32,7 +34,7 @@ True and False
 True or True
 True or False
 
-
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 str1 = "Hello World"
 str2 = "Shubh"
@@ -61,6 +63,7 @@ lst1[1:5] # ['Puri', 'World', 100, 200]
 # Nested list
 lst1.append(["Swap","Kumar") # ['Shubh', 'Puri', 'World', 100, 200, 400, 'Hello', ['Swap', 'Kumar']]
 
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 #### Insert
 # Insert in specific order
@@ -72,6 +75,7 @@ lst1.insert(2,"World") # ['Shubh', 'Puri', 'World', 100, 200, 400, 'Hello']
 str = [1,2,3,4,5,6,] 
 str.extend([7,8,9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 #### Various operation that we can perform in list
 
@@ -108,7 +112,158 @@ lst = [1,2,3,4,5]
 lst*2 # it will add list data again in the list like [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 
 
+####---------------------------------------------------------------------------------------------------------------------------------------
+#### Sets
+# A set is a unordered collection of data type that is iterable, mutable, and has no duplicate elements. Python's set class represent mathematical notion of a set. This is based on data structure known as hash table.
 
+
+## Definition of an empty sets
+set_var = set()
+print(set_var)
+print(type(set_var))
+
+
+set_var = {"Avenger", "Ironman", "Hitman"}
+print(set_var) # {'Hitman', 'Avenger', 'Ironman'}
+type(set_var) # set
+
+
+# Indexing or reding data
+set_var["Avenger"] # it will not work in indexing, getting error # {'Avenger', 'Hitman', 'Hulk', 'Ironman'}
+
+
+# In build function in set
+set_var.add('Hulk')
+print(set_var) # {'Hitman', 'Avenger', 'Hulk', 'Ironman'}
+
+
+# Difference
+set1 = {"Avenger", "Ironman", "Hitman"}
+set2 = {"Avenger", "Ironman", "Hitman", "Hulk"}
+set2.difference(set1) # {'Hulk'}
+
+
+# Difference_update
+set3 = {"Avenger", "Ironman", "Hitman"}
+set4 = {"Avenger", "Ironman", "Hitman", "Hulk"}
+set4.difference_update(set3)
+print(set3) # {'Hitman', 'Avenger', 'Ironman'}
+print(set4) # {'Hulk'}
+
+
+# Intersection, getting common element displayed
+set5 = {"Avenger", "Ironman", "Hitman"}
+set6 = {"Avenger", "Ironman", "Hitman", "Hulk"}
+set5.intersection(set6) # {'Avenger', 'Hitman', 'Ironman'}
+
+
+# Intersection_update, updating common element displayed
+set7 = {"Avenger", "Ironman", "Hitman"}
+set8 = {"Avenger", "Ironman", "Hitman", "Hulk"}
+set5.intersection_update(set6)
+set5
+set6 # {'Avenger', 'Hitman', 'Hulk', 'Ironman'}
+
+####---------------------------------------------------------------------------------------------------------------------------------------
+
+#### Dictionary (like Map)
+Dictionary is a collection which is unordered, changeable and indexed. In python dictionaries are written with curl brackets and they have keys and values.
+
+
+# Definition of an empty dict
+dict = {} # empty dictionary
+type(dict) # dict
+
+
+# create a dictionary
+my_dict = {"Car1":"Audi", "Car2":"BMW", "Car3":"Mercedes"}
+my_dict # {'Car1': 'Audi', 'Car2': 'BMW', 'Car3': 'Mercedes'}
+
+
+# Access the item value based on key
+my_dict['Car1'] # 'Audi'
+
+
+
+# We can even loop through the dictionaries keys
+for x in my_dict:
+    print(x) # car1 car2 car3
+
+
+
+# We can even loop through the dictionaries values
+for x in my_dict.values():
+    print(x) # Audi BMW Mercedes
+
+
+
+# We can also check both keys and values
+for x in my_dict.items():
+    print(x) # ('Car1', 'Audi') ('Car2', 'BMW') ('Car3', 'Mercedes')
+
+
+
+# Adding item in dictionary
+my_dict["Car4"] = "Audi 2.0"
+print(my_dict) # {'Car1': 'Audi', 'Car2': 'BMW', 'Car3': 'Mercedes', 'Car4': 'Audi 2.0'}
+
+
+
+# Update value with respect to key
+my_dict["Car1"] = "Farrari" # overide the value of key 'Car1'
+my_dict # {'Car1': 'Farrari', 'Car2': 'BMW', 'Car3': 'Mercedes', 'Car4': 'Audi 2.0'}
+
+
+
+# Nested Dictionary
+car1_model = {"Mercedes": 1960}
+car2_model = {"Audi": 1950}
+car3_model = {"Maruti": 1880}
+
+car_type = {'car1':car1_model, 'car2':car2_model, 'car3':car3_model}
+car_type # {'car1': {'Mercedes': 1960}, 'car2': {'Audi': 1950}, 'car3': {'Maruti': 1880}}
+
+
+
+
+# Accessing the items in the directory
+print(car_type['car1']) # {'Mercedes': 1960}
+
+
+
+# Accessing the value in the dictionary
+print(car_type['car1']['Mercedes']) # 1960
+
+####---------------------------------------------------------------------------------------------------------------------------------------
+
+#### Tuples
+#A tuple in Python is an immutable, ordered collection of elements, enclosed in parentheses, and can store multiple items of different data types. Example: my_tuple = (1, 'hello', 3.14).
+
+# Creating an empty tuple
+my_tuple = tuple()
+type(my_tuple) # tuple
+
+
+
+# Assign values to tuple and make sure values enclosed in round brckets
+my_tuple = ('Shubh', 'Swap', 'Rupesh', 'Shubh')
+print(my_tuple) # ('Shubh', 'Swap', 'Rupesh', 'Shubh')
+type(my_tuple) # tuple
+
+
+
+# tuple individual elements won't get replced, we will be able to replace entire tuple (completely change the whole list data but not single element)
+# tuple is used where just a definition of an item is required for just one time, we cannot perform some operation on it just replace whole tuple 
+my_tuple = ('Hello', 'Shubh')
+print(my_tuple) # ('Hello', 'Shubh')
+
+
+
+# In build function
+my_tuple.count('Shubh') # count how many time 'Shubh' is present
+my_tuple.index('Swap') # find the incex number where the 'swap' is # 1
+
+####---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
