@@ -263,6 +263,7 @@ print(my_tuple) # ('Hello', 'Shubh')
 my_tuple.count('Shubh') # count how many time 'Shubh' is present
 my_tuple.index('Swap') # find the incex number where the 'swap' is # 1
 
+
 ####---------------------------------------------------------------------------------------------------------------------------------------
 
 
